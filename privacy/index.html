@@ -12,7 +12,7 @@ a{color:var(--accent)}ul{padding-left:1.3rem}li{margin:.3rem 0}
 .banner{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:.7rem 1rem;margin:0 0 1.2rem;font-size:.95rem;color:var(--muted)}
 footer{margin-top:3rem;color:var(--muted);font-size:.85rem}
 </style></head><body><main><nav class="lang" aria-label="Language"><a href="/seventh-steep-legal/privacy/" hreflang="en" lang="en" aria-current="page">English</a><a href="/seventh-steep-legal/privacy/uk/" hreflang="uk" lang="uk">Українська</a><a href="/seventh-steep-legal/privacy/zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="/seventh-steep-legal/privacy/zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav><h1>Privacy Policy: Seventh Steep</h1>
-<p>Effective: 2026-10-17. Published by Mark Bielinskyi (Ukraine). Contact: <a href="mailto:hop_fairer9v@icloud.com">hop_fairer9v@icloud.com</a>.</p>
+<p>Effective: 2026-10-18. Published by Mark Bielinskyi (Ukraine). Contact: <a href="mailto:hop_fairer9v@icloud.com">hop_fairer9v@icloud.com</a>.</p>
 <p><strong>In short</strong></p>
 <ul>
 <li>There are no accounts, no ads, no analytics and no tracking.</li>
@@ -26,25 +26,25 @@ footer{margin-top:3rem;color:var(--muted);font-size:.85rem}
 <p>If you choose to identify a tea from a photo, the app makes a smaller copy of the photo (longest side 1024 pixels), and sends it over an encrypted connection to our server. Our server sends it to the Anthropic API to get an estimate of the tea type. Our server does not store the photo and does not write it to logs. The result is shown to you. You can save a photo you took yourself to your shelf; that copy stays on your device.</p>
 <p>We use the photo only to give you this result.</p>
 <p><strong>3. Other data our server handles</strong></p>
-<p>To limit use and prevent abuse, the app sends our server: a random install identifier (or a device key identifier created by Apple's App Attest), and, if you have Plus, the signed subscription receipt from the App Store. The server keeps counters of how many photos were identified, linked to a hashed identifier or the subscription transaction number. It does not know your name, email or Apple ID. The server also sees your IP address while it handles a request, uses it for rate limits and does not write it to logs.</p>
+<p>To limit use and prevent abuse, the app creates a random install identifier and stores it in the iPhone Keychain. It sends this identifier with each identification request and, if you have Plus, the signed subscription receipt from the App Store. The server keeps only a hash of the install identifier, together with counters of how many photos were identified; for Plus, the counters are linked to the subscription's original transaction number. It does not know your name, email or Apple ID. The identifier is shown in Settings &gt; Photo and AI (with a Copy button). It is the identifier you send by email to request deletion (section 8). "Delete all data" keeps it, so that deleting data cannot reset the free quota, and it may survive deleting and reinstalling the app. The server also sees your IP address while it handles a request, uses it for rate limits and does not write it to logs.</p>
 <p><strong>4. Purchases</strong></p>
-<p>Subscriptions and tips are handled by Apple. We do not receive your card or payment details. We learn only whether a Plus subscription is active, from the signed receipt in section 3. Tips unlock nothing.</p>
+<p>Subscriptions and tips are handled by Apple. We do not receive your card or payment details. We learn only whether a Plus subscription is active, from the signed receipt in section 3, and we keep counters linked to the subscription's original transaction number. Plus photo identification works the same way: your photos are sent to an AI service after you agree. Tips unlock nothing.</p>
 <p><strong>5. Third parties</strong></p>
 <ul>
 <li><strong>Anthropic</strong> (AI service provider): receives the photo you ask us to identify, and the instruction we send with it. Anthropic deletes API inputs and outputs within 30 days of receipt, except in limited cases such as content flagged for policy violations, or where the law requires longer storage. Under its commercial terms Anthropic does not train its models on this content. We have a duty to give your data the same protection as this policy states, and we use Anthropic only for this purpose.</li>
-<li><strong>Apple</strong>: App Store, purchases, and the optional App Attest check.</li>
+<li><strong>Apple</strong>: App Store and purchases.</li>
 <li><strong>Hosting provider</strong>: our server runs on Amazon Web Services (Amazon Lightsail, Stockholm, Sweden), which processes requests for us.</li>
 </ul>
 <p>We do not sell your data and we do not share it for advertising.</p>
 <p><strong>6. Your consent and how to withdraw it</strong></p>
-<p>Before the first photo is sent, the app asks for your permission and names Anthropic. If you say "Not now", you can still choose your tea manually. To withdraw consent, open Settings &gt; Photo and AI. After you withdraw, the app asks again before it sends any new photo. Photos already processed cannot be recalled from Anthropic, but they are deleted by Anthropic within the period in section 5.</p>
+<p>The app asks for your permission when you tap Identify, before any photo is resized or sent. The sheet names Anthropic. If you tap "Not now", nothing is sent and you can still choose your tea manually. To withdraw consent, open Settings &gt; Photo and AI. "Delete all data" also clears your consent. After you withdraw, the app asks again before it sends any new photo. Photos already processed cannot be recalled from Anthropic, but they are deleted by Anthropic within the period in section 5.</p>
 <p><strong>7. How long we keep data</strong></p>
-<p>Photos: not kept by us; kept by Anthropic for up to 30 days. Quota counters: deleted 90 days after the month or day they count has ended. Server logs (no photos, no receipts): up to 14 days. Data on your iPhone: until you delete it.</p>
+<p>Photos: not kept by us; kept by Anthropic for up to 30 days (except the limited cases in section 5). Quota counters: deleted 90 days after the month or day they count has ended. Server logs (no photos, no receipts): up to 14 days. Data on your iPhone: until you delete it.</p>
 <p><strong>8. Deleting your data</strong></p>
 <ul>
-<li>On your iPhone: Settings &gt; Delete all data removes your shelf, notes and settings. It keeps the random install identifier that the app uses to count free photos; that identifier may also survive deleting and reinstalling the app. The counters on our server linked to it are deleted automatically 90 days after the period they count has ended, or earlier on request (see below).</li>
-<li>On our server: we hold no name or email. To have the counters tied to your install or subscription deleted, email <a href="mailto:hop_fairer9v@icloud.com">hop_fairer9v@icloud.com</a> and send the identifier shown in the app (or your subscription's original transaction number) so we can find it. We delete it within 30 days.</li>
-<li>Photos at Anthropic: they are deleted automatically within 30 days.</li>
+<li>On your iPhone: Settings &gt; Delete all data removes your shelf, notes and settings, and also clears your photo consent. It keeps the random install identifier that the app uses to count free photos; that identifier may also survive deleting and reinstalling the app. The counters on our server linked to it are deleted automatically 90 days after the period they count has ended, or earlier on request (see below).</li>
+<li>On our server: we hold no name or email. To have the counters tied to your install or subscription deleted, email <a href="mailto:hop_fairer9v@icloud.com">hop_fairer9v@icloud.com</a> and send the identifier shown in Settings &gt; Photo and AI (or your subscription's original transaction number) so we can find it. We delete it within 30 days.</li>
+<li>Photos at Anthropic: they are deleted automatically within the period Anthropic states for API data (30 days when this policy was updated), except in the limited cases named in section 5. We cannot delete them earlier.</li>
 </ul>
 <p><strong>9. Children</strong></p>
 <p>The app is not directed at children. We do not knowingly collect personal data from children.</p>

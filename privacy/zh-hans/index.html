@@ -12,7 +12,7 @@ a{color:var(--accent)}ul{padding-left:1.3rem}li{margin:.3rem 0}
 .banner{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:.7rem 1rem;margin:0 0 1.2rem;font-size:.95rem;color:var(--muted)}
 footer{margin-top:3rem;color:var(--muted);font-size:.85rem}
 </style></head><body><main><nav class="lang" aria-label="Language"><a href="/seventh-steep-legal/privacy/" hreflang="en" lang="en">English</a><a href="/seventh-steep-legal/privacy/uk/" hreflang="uk" lang="uk">Українська</a><a href="/seventh-steep-legal/privacy/zh-hans/" hreflang="zh-Hans" lang="zh-Hans" aria-current="page">简体中文</a><a href="/seventh-steep-legal/privacy/zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav><div class="banner">本译文为草稿，尚待母语者审校。如与英文版有差异，以英文版为准。</div><h1>隐私政策：第七泡 (Seventh Steep)</h1>
-<p>生效日期：2026-10-17。发布者：Mark Bielinskyi（Ukraine）。联系方式：<a href="mailto:hop_fairer9v@icloud.com">hop_fairer9v@icloud.com</a>。</p>
+<p>生效日期：2026-10-18。发布者：Mark Bielinskyi（Ukraine）。联系方式：<a href="mailto:hop_fairer9v@icloud.com">hop_fairer9v@icloud.com</a>。</p>
 <p><strong>简要说明</strong></p>
 <p>本应用不设账号，不含广告，不进行数据分析或跟踪。您的茶架、笔记和设置仅存储于您的 iPhone 上。仅在您要求应用识别茶叶并已同意的情况下，照片才会传输至 iPhone 之外。照片将先传输至我们的服务器，再由我们发送给 AI 服务提供商 Anthropic 处理。您可以随时在“设置”中撤回同意，并删除本应用存储在 iPhone 上的全部数据。</p>
 <p><strong>1. 本应用存储在您 iPhone 上的数据</strong></p>
@@ -20,25 +20,25 @@ footer{margin-top:3rem;color:var(--muted);font-size:.85rem}
 <p><strong>2. 照片识别（可选）</strong></p>
 <p>如果您选择通过照片识别茶叶，本应用会生成一张尺寸较小的副本（最长边为 1024 像素），并通过加密连接传输至我们的服务器。服务器会将其发送至 Anthropic API，以获取茶叶类型的识别结果。我们的服务器不会保存照片，也不会将照片写入日志。识别结果将显示给您。您可以将自己拍摄的照片保存至茶架，该副本仅存储于您的设备上。我们仅将照片用于生成上述识别结果。</p>
 <p><strong>3. 服务器处理的其他数据</strong></p>
-<p>为进行频率限制并防止滥用，本应用会向服务器发送：随机安装标识符（或由 Apple App Attest 生成的设备密钥标识符），以及您订阅 Plus 时由 App Store 提供的经签名订阅凭证。服务器会记录照片识别请求次数，并将其与经过哈希处理的标识符或订阅交易编号相关联。服务器不会获知您的姓名、电子邮箱或 Apple ID。处理请求时，服务器会获取您的 IP 地址，并将其用于限制请求频率，不会将其写入日志。</p>
+<p>为进行频率限制并防止滥用，本应用会生成一个随机安装标识符，并存放在 iPhone 的钥匙串（Keychain）中。每次识别请求都会连同该标识符一起发送；如果您订阅了 Plus，还会发送 App Store 提供的经签名订阅凭证。服务器只保存安装标识符的哈希值，以及照片识别次数的计数；对于 Plus，计数与订阅的原始交易编号相关联。服务器不会获知您的姓名、电子邮箱或 Apple ID。该标识符显示在“设置”&gt;“照片与 AI”中（带有拷贝按钮），申请删除时请通过电子邮件发送该标识符（见第 8 节）。“删除所有数据”会保留该标识符，以免删除数据后免费次数被重置；删除并重新安装应用后，它也可能仍然存在。处理请求时，服务器还会获取您的 IP 地址，并将其用于限制请求频率，不会将其写入日志。</p>
 <p><strong>4. 购买</strong></p>
-<p>订阅和打赏均通过 Apple 处理。我们不会收到您的银行卡信息或其他支付详情。我们仅通过第 3 节所述的经签名订阅凭证确认 Plus 订阅是否有效。打赏不会解锁任何功能。</p>
+<p>订阅和打赏均通过 Apple 处理。我们不会收到您的银行卡信息或其他支付详情。我们仅通过第 3 节所述的经签名订阅凭证确认 Plus 订阅是否有效，并保存与订阅原始交易编号相关联的计数。Plus 的照片识别方式相同：只有在您同意后，您的照片才会发送给 AI 服务。打赏不会解锁任何功能。</p>
 <p><strong>5. 第三方</strong></p>
 <ul>
 <li><strong>Anthropic</strong>（AI 服务提供商）：接收您要求识别的照片以及我们随附的指令。Anthropic 会在收到 API 输入和输出后 30 天内删除，但特定有限情形除外，例如相关内容被标记为违反政策，或法律要求保存更长时间。根据其商业条款，Anthropic 不会将这些内容用于训练其模型。我们承诺确保您的数据获得与本政策同等水平的保护，并要求 Anthropic 仅为此目的处理相关数据。</li>
-<li><strong>Apple</strong>：App Store、购买处理以及可选的 App Attest 验证。</li>
+<li><strong>Apple</strong>：App Store 和购买处理。</li>
 <li><strong>托管服务商</strong>：我们的服务器托管于 Amazon Web Services（Amazon Lightsail，瑞典斯德哥尔摩），其代表我们处理请求。</li>
 </ul>
 <p>我们不会出售您的数据，也不会将其用于广告共享。</p>
 <p><strong>6. 您的同意及如何撤回</strong></p>
-<p>在发送第一张照片之前，本应用会征求您的同意，并明确告知涉及 Anthropic。如果您选择“暂不”，仍可手动选择茶叶。如需撤回同意，请打开“设置”&gt;“照片与 AI”。撤回后，本应用在发送任何新照片前会重新征求您的同意。已处理的照片无法从 Anthropic 撤回，但 Anthropic 会在第 5 节所述期限内删除。撤回同意不影响撤回前基于同意已进行的处理。</p>
+<p>点按“识别”时，在照片被缩小或发送之前，本应用会征求您的同意。该提示会明确告知涉及 Anthropic。如果您选择“暂不”，则不会发送任何内容，您仍可手动选择茶叶。如需撤回同意，请打开“设置”&gt;“照片与 AI”。“删除所有数据”也会清除您的同意。撤回后，本应用在发送任何新照片前会重新征求您的同意。已处理的照片无法从 Anthropic 撤回，但 Anthropic 会在第 5 节所述期限内删除。撤回同意不影响撤回前基于同意已进行的处理。</p>
 <p><strong>7. 数据保存期限</strong></p>
-<p>照片：我们不保存；Anthropic 保存时间不超过 30 天（第 5 节所述情形除外）。服务器计数记录：在其所统计的月份或日期结束后 90 天内删除。服务器日志（不含照片和订阅凭证）：最长 14 天。iPhone 上的数据：直至您删除。</p>
+<p>照片：我们不保存；Anthropic 保存时间不超过 30 天（第 5 节所述有限情形除外）。服务器计数记录：在其所统计的月份或日期结束后 90 天内删除。服务器日志（不含照片和订阅凭证）：最长 14 天。iPhone 上的数据：直至您删除。</p>
 <p><strong>8. 删除您的数据</strong></p>
 <ul>
-<li>在 iPhone 上：通过“设置”&gt;“删除所有数据”可清除茶架、笔记和设置。应用用于统计免费照片次数的随机安装标识符会被保留；该标识符在删除并重新安装应用后也可能仍然存在。服务器上与之关联的计数记录会在其所统计的时间段结束 90 天后自动删除，或应您的请求提前删除（见下文）。</li>
-<li>在我们的服务器上：我们不掌握您的姓名或电子邮箱。如需删除与您的安装或订阅相关联的计数记录，请发送电子邮件至 <a href="mailto:hop_fairer9v@icloud.com">hop_fairer9v@icloud.com</a>，并提供应用中显示的标识符（或订阅的原始交易编号），以便我们查找。我们会在收到请求后 30 天内删除。</li>
-<li>Anthropic 处的照片：30 天内自动删除。</li>
+<li>在 iPhone 上：通过“设置”&gt;“删除所有数据”可清除茶架、笔记和设置，同时清除您的照片同意。应用用于统计免费照片次数的随机安装标识符会被保留；该标识符在删除并重新安装应用后也可能仍然存在。服务器上与之关联的计数记录会在其所统计的时间段结束 90 天后自动删除，或应您的请求提前删除（见下文）。</li>
+<li>在我们的服务器上：我们不掌握您的姓名或电子邮箱。如需删除与您的安装或订阅相关联的计数记录，请发送电子邮件至 <a href="mailto:hop_fairer9v@icloud.com">hop_fairer9v@icloud.com</a>，并提供“设置”&gt;“照片与 AI”中显示的标识符（或订阅的原始交易编号），以便我们查找。我们会在收到请求后 30 天内删除。</li>
+<li>Anthropic 处的照片：会在 Anthropic 对 API 数据所述的期限内自动删除（本政策更新时为 30 天），第 5 节所述有限情形除外。我们无法提前删除。</li>
 </ul>
 <p><strong>9. 儿童</strong></p>
 <p>本应用不面向儿童设计。我们不会故意收集儿童的个人数据。</p>
