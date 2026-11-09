@@ -85,8 +85,8 @@ GUIDES = [
         "short": "Shou puerh",
         "title": "How to brew shou puerh gongfu style",
         "meta_title": "How to brew shou puerh gongfu style: grams, temperature, times",
-        "description": "Shou (ripe) puerh, gongfu style: 5 g per 100 ml, 98 °C (208 °F), a 10 s rinse and a full list of infusion times.",
-        "card": "Ripe, fermented puerh. Very hot water, a 10 second rinse, short first infusions.",
+        "description": "Shou (ripe) puerh, gongfu style: {g100} g per 100 ml, {temp_c} °C ({temp_f} °F), a {rinse} s rinse and a full list of infusion times.",
+        "card": "Ripe, fermented puerh. {temp_c} °C water, a {rinse} second rinse, short first infusions.",
         "intro": [
             "Shou, or ripe puerh, is fermented in a wet pile before it is pressed. The taste is dark, smooth and earthy.",
             "It is an easy tea to start with. It takes very hot water and long late infusions. Use the numbers below as a starting point and change them to your taste.",
@@ -115,8 +115,8 @@ GUIDES = [
         "short": "Young sheng puerh",
         "title": "How to brew young sheng puerh gongfu style",
         "meta_title": "Young sheng puerh gongfu: temperature, grams and steeping times",
-        "description": "Young sheng (raw) puerh, gongfu style: 5 g per 100 ml, 92 °C (198 °F), a 5 s rinse and a full list of steeping times.",
-        "card": "Raw puerh under about five years. Not too hot, a quick rinse, fast pours.",
+        "description": "Young sheng (raw) puerh, gongfu style: {g100} g per 100 ml, {temp_c} °C ({temp_f} °F), a {rinse} s rinse and a full list of steeping times.",
+        "card": "Raw puerh under about five years. {temp_c} °C water, a {rinse} second rinse, fast pours.",
         "intro": [
             "Sheng, or raw puerh, is not fermented in a pile. Young sheng (here: under about five years) is bright, floral and fresh, and it can be bitter.",
             "Most of the bitterness comes from water that is too hot or an infusion that is too long. The numbers below keep it in balance. Use them as a starting point and change them to your taste.",
@@ -247,6 +247,27 @@ def page(*, path: str, title: str, description: str, body: str, campaign: str, n
 # ---------------------------------------------------------------------------------------------
 # Pages
 # ---------------------------------------------------------------------------------------------
+def guide_vals(g: dict, profiles: dict) -> dict:
+    """Every number a guide text may use, taken from the app's profile."""
+    p = profiles[g["profile"]]
+    lo, hi = p["tempRange"]
+    return {
+        "temp_c": p["tempDefault"],
+        "temp_f": to_f(p["tempDefault"]),
+        "range_c": f"{lo}–{hi}",
+        "range_f": f"{to_f(lo)}–{to_f(hi)}",
+        "g100": grams(100, p["gramsPer100ml"]),
+        "g150": grams(150, p["gramsPer100ml"]),
+        "rinse": p["rinseSeconds"],
+        "first": p["infusionSeconds"][0],
+        "step": EXTRA_STEP_SECONDS,
+    }
+
+
+def card_text(g: dict, profiles: dict) -> str:
+    return g["card"].format(**guide_vals(g, profiles))
+
+
 def tea_row(p: dict, up: str) -> str:
     c, f = p["tempDefault"], to_f(p["tempDefault"])
     nums = f'{c} °C · {to_f(c)} °F<span>{grams(100, p["gramsPer100ml"])} g per 100 ml</span>'
@@ -329,7 +350,7 @@ def guides_index(profiles: dict) -> str:
         cards.append(
             f'<li><a class="tea" href="{g["slug"]}/">{cup(p["liquorColor"])}'
             f'<div class="tea-main"><div class="tea-name">{e(g["short"])}</div>'
-            f'<div class="tea-sub">{e(g["card"])}</div></div></a></li>'
+            f'<div class="tea-sub">{e(card_text(g, profiles))}</div></div></a></li>'
         )
     body = f"""
 <div class="wrap narrow">
@@ -362,19 +383,8 @@ def guides_index(profiles: dict) -> str:
 def guide(g: dict, profiles: dict) -> str:
     p = profiles[g["profile"]]
     path = f"guides/{g['slug']}/"
-    lo, hi = p["tempRange"]
     times = p["infusionSeconds"]
-    vals = {
-        "temp_c": p["tempDefault"],
-        "temp_f": to_f(p["tempDefault"]),
-        "range_c": f"{lo}–{hi}",
-        "range_f": f"{to_f(lo)}–{to_f(hi)}",
-        "g100": grams(100, p["gramsPer100ml"]),
-        "g150": grams(150, p["gramsPer100ml"]),
-        "rinse": p["rinseSeconds"],
-        "first": times[0],
-        "step": EXTRA_STEP_SECONDS,
-    }
+    vals = guide_vals(g, profiles)
     fill = lambda s: s.format(**vals)
     rinse = p["rinseSeconds"]
     rinse_text = f"{rinse} s" if rinse else "No rinse"
@@ -442,12 +452,12 @@ def guide(g: dict, profiles: dict) -> str:
 
   <h2>More guides</h2>
   <div class="related">
-    <a class="tea" href="../{rel["slug"]}/">{cup(relp["liquorColor"])}<div class="tea-main"><div class="tea-name">{e(rel["short"])}</div><div class="tea-sub">{e(rel["card"])}</div></div></a>
+    <a class="tea" href="../{rel["slug"]}/">{cup(relp["liquorColor"])}<div class="tea-main"><div class="tea-name">{e(rel["short"])}</div><div class="tea-sub">{e(card_text(rel, profiles))}</div></div></a>
     <a class="tea" href="../">{cup("#B58A44")}<div class="tea-main"><div class="tea-name">All guides</div><div class="tea-sub">Every brewing guide on this site</div></div></a>
   </div>
 </div>
 """
-    return page(path=path, title=g["meta_title"], description=g["description"], body=body, campaign=g["campaign"], nav="guides", og_type="article")
+    return page(path=path, title=g["meta_title"], description=fill(g["description"]), body=body, campaign=g["campaign"], nav="guides", og_type="article")
 
 
 def sitemap() -> str:
