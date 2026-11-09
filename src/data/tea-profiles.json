@@ -1,0 +1,60 @@
+{
+  "_note": "Gongfu starting points per 100 ml of vessel. Temperatures in Celsius, times in seconds. These are typical recommendations, not lab values; the owner will tune them. Infusions beyond the list add +20 s each (no upper limit).",
+  "profiles": [
+    {
+      "id": "sheng_young",
+      "name": { "uk": "Молодий шен", "en": "Young sheng", "zh-Hans": "新生普", "zh-Hant": "新生普" },
+      "subtitle": { "uk": "до 5 років", "en": "under ~5 years", "zh-Hans": "5年以内", "zh-Hant": "5年以內" },
+      "tempRange": [90, 95], "tempDefault": 92,
+      "gramsPer100ml": 5,
+      "rinseSeconds": 5,
+      "infusionSeconds": [10, 10, 15, 20, 25, 35, 45, 60, 80, 100],
+      "liquorColor": "#C9B45A",
+      "tip": { "uk": "Гірчить від надто гарячої води. Тримайте 90–93 °C, щоб зберегти квіткову свіжість.", "en": "Too-hot water makes it bitter. Hold 90–93 °C to keep the floral freshness.", "zh-Hans": "水温过高会发苦。保持 90–93 °C，留住花香与鲜爽。", "zh-Hant": "水溫過高會發苦。保持 90–93 °C，留住花香與鮮爽。" }
+    },
+    {
+      "id": "sheng_aged",
+      "name": { "uk": "Витриманий шен", "en": "Aged sheng", "zh-Hans": "老生普", "zh-Hant": "老生普" },
+      "subtitle": { "uk": "5+ років", "en": "5+ years", "zh-Hans": "5年以上", "zh-Hant": "5年以上" },
+      "tempRange": [95, 100], "tempDefault": 98,
+      "gramsPer100ml": 5.5,
+      "rinseSeconds": 10,
+      "infusionSeconds": [10, 10, 12, 15, 20, 28, 40, 55, 75, 100],
+      "liquorColor": "#C47A2C",
+      "tip": { "uk": "Любить гарячу воду, щоб розкрити глибину. Якщо чай зі складу з вологою, промийте двічі.", "en": "Likes hot water to open up depth. If it was stored damp, rinse twice.", "zh-Hans": "喜高温，才能泡出层次。若曾湿仓存放，洗茶两次。", "zh-Hant": "喜高溫，才能泡出層次。若曾濕倉存放，洗茶兩次。" }
+    },
+    {
+      "id": "shou",
+      "name": { "uk": "Шу", "en": "Shou (ripe)", "zh-Hans": "熟普", "zh-Hant": "熟普" },
+      "subtitle": { "uk": "ферментований", "en": "fermented", "zh-Hans": "渥堆发酵", "zh-Hant": "渥堆發酵" },
+      "tempRange": [95, 100], "tempDefault": 98,
+      "gramsPer100ml": 5,
+      "rinseSeconds": 10,
+      "infusionSeconds": [8, 10, 12, 15, 20, 28, 40, 55, 75, 100],
+      "liquorColor": "#7A2E1C",
+      "tip": { "uk": "Свіжий шу може пахнути вологою купою. Друга промивка швидко це прибере.", "en": "Fresh shou can smell of the wet pile. A second rinse clears it quickly.", "zh-Hans": "新熟普可能带有渥堆味。第二次洗茶可迅速去除。", "zh-Hant": "新熟普可能帶有渥堆味。第二次洗茶可迅速去除。" }
+    },
+    {
+      "id": "white_young",
+      "name": { "uk": "Білий (Юньнань)", "en": "White (Yunnan)", "zh-Hans": "云南白茶", "zh-Hant": "雲南白茶" },
+      "subtitle": { "uk": "Юе Гуан Бай, молодий", "en": "Moonlight white, young", "zh-Hans": "月光白，新茶", "zh-Hant": "月光白，新茶" },
+      "tempRange": [80, 90], "tempDefault": 85,
+      "gramsPer100ml": 4,
+      "rinseSeconds": 0,
+      "infusionSeconds": [25, 20, 25, 30, 40, 50, 65, 85],
+      "liquorColor": "#D6C98C",
+      "tip": { "uk": "Ніжний. Без промивки, вода не вище 85–90 °C, перші проливи довші, ніж у пуера.", "en": "Delicate. No rinse, water no hotter than 85–90 °C, first infusions longer than puerh.", "zh-Hans": "细嫩。不洗茶，水温不超过 85–90 °C，前几泡比普洱更长。", "zh-Hant": "細嫩。不洗茶，水溫不超過 85–90 °C，前幾泡比普洱更長。" }
+    },
+    {
+      "id": "white_aged",
+      "name": { "uk": "Витриманий білий", "en": "Aged white", "zh-Hans": "老白茶", "zh-Hant": "老白茶" },
+      "subtitle": { "uk": "3+ роки", "en": "3+ years", "zh-Hans": "3年以上", "zh-Hant": "3年以上" },
+      "tempRange": [95, 100], "tempDefault": 97,
+      "gramsPer100ml": 5,
+      "rinseSeconds": 5,
+      "infusionSeconds": [15, 15, 20, 25, 35, 45, 60, 80, 100],
+      "liquorColor": "#B58A44",
+      "tip": { "uk": "Витримка дозволяє гарячу воду. Швидка промивка, далі пролив за пролив.", "en": "Age allows hot water. Quick rinse, then infusion by infusion.", "zh-Hans": "陈化后可用高温。快速洗茶，然后一泡接一泡。", "zh-Hant": "陳化後可用高溫。快速洗茶，然後一泡接一泡。" }
+    }
+  ]
+}
