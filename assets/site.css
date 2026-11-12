@@ -1,8 +1,8 @@
 /* Seventh Steep site styles. Tokens come from the app (pur-pur CLAUDE.md, "Design tokens"). Dark only. */
-@font-face{font-family:"Cormorant Garamond";src:url("fonts/CormorantGaramond-Medium.ttf") format("truetype");font-weight:500;font-style:normal;font-display:swap}
-@font-face{font-family:"Onest";src:url("fonts/Onest-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Onest";src:url("fonts/Onest-SemiBold.ttf") format("truetype");font-weight:600;font-style:normal;font-display:swap}
-@font-face{font-family:"Seventh Brand";src:url("fonts/NotoSerifSC-Brand.ttf") format("truetype");font-display:block}
+@font-face{font-family:"Cormorant Garamond";src:url("fonts/CormorantGaramond-Medium.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Onest";src:url("fonts/Onest-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Onest";src:url("fonts/Onest-SemiBold.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Seventh Brand";src:url("fonts/NotoSerifSC-Brand.woff2") format("woff2");font-display:block}
 
 :root{
   --ground:#14110E;--surface:#1F1A15;--raised:#292219;--bar:#17130F;

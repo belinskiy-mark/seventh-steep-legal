@@ -220,7 +220,7 @@ def page(*, path: str, title: str, description: str, body: str, campaign: str, n
 <link rel="icon" type="image/png" sizes="32x32" href="{up}assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="{up}assets/img/icon-192.png">
 <link rel="apple-touch-icon" href="{up}assets/img/apple-touch-icon.png">
-<link rel="preload" href="{up}assets/fonts/Onest-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="{up}assets/fonts/Onest-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{up}assets/site.css">
 </head>
 <body>
