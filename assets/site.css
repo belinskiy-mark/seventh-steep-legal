@@ -183,3 +183,29 @@ th,td{white-space:nowrap}
 td .f{color:var(--muted);margin-left:.35rem}
 @media (max-width:520px){th,td{padding:.65rem .7rem}td .f{display:block;margin-left:0}}
 .prose .times{padding-left:0}
+
+/* Header right side: main nav + language switch */
+.site-head{flex-wrap:wrap}
+.head-right{display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;justify-content:flex-end}
+.lang-switch{display:flex;gap:.15rem;border:1px solid var(--line);border-radius:999px;padding:.15rem}
+.lang-switch a{font-size:.78rem;line-height:1;padding:.38rem .55rem;border-radius:999px;color:var(--muted);text-decoration:none;font-weight:600;letter-spacing:.02em}
+.lang-switch a:hover{color:var(--text)}
+.lang-switch a[aria-current=page]{background:var(--accent);color:var(--on-accent)}
+@media (max-width:599px){
+  .head-right{width:100%;justify-content:space-between;gap:.8rem}
+  .site-head{row-gap:.7rem}
+}
+
+/* Chinese: system CJK fonts (no CJK font is hosted). Latin and digits stay Onest / Cormorant. */
+:lang(zh-Hans){--ui:"Onest","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Source Han Sans SC","Microsoft YaHei",sans-serif;--display-cjk:"Cormorant Garamond","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",serif}
+:lang(zh-Hant){--ui:"Onest","PingFang TC","Heiti TC","Noto Sans CJK TC","Source Han Sans TC","Microsoft JhengHei",sans-serif;--display-cjk:"Cormorant Garamond","PingFang TC","Heiti TC","Noto Sans CJK TC","Microsoft JhengHei",serif}
+:lang(zh-Hans) body,:lang(zh-Hant) body{line-height:1.75}
+:lang(zh-Hans) :is(h1,h2,h3,.tea-name),:lang(zh-Hant) :is(h1,h2,h3,.tea-name){font-family:var(--ui);font-weight:600;letter-spacing:.02em;line-height:1.3}
+:lang(zh-Hans) h1,:lang(zh-Hant) h1{font-size:clamp(2rem,5.6vw,3.3rem)}
+:lang(zh-Hans) h2,:lang(zh-Hant) h2{font-size:clamp(1.45rem,3.4vw,2rem)}
+:lang(zh-Hans) h3,:lang(zh-Hant) h3{font-size:1.2rem}
+:lang(zh-Hans) .tea-name,:lang(zh-Hant) .tea-name{font-size:1.12rem}
+:lang(zh-Hans) .brand .name,:lang(zh-Hant) .brand .name{font-family:"Seventh Brand",var(--display-cjk);font-size:1.5rem}
+:lang(zh-Hans) :is(.fact .v,.times .t),:lang(zh-Hant) :is(.fact .v,.times .t){font-family:var(--display-cjk)}
+:lang(zh-Hans) .times .t,:lang(zh-Hant) .times .t{font-size:1.35rem}
+:lang(zh-Hans) .eyebrow,:lang(zh-Hant) .eyebrow{letter-spacing:.12em}

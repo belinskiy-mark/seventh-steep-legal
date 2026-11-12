@@ -1,0 +1,163 @@
+{
+  "lang": "en",
+  "html_lang": "en",
+  "og_locale": "en_US",
+  "switch_label": "EN",
+  "switch_name": "English",
+  "prefix": "",
+  "img_dir": "",
+  "legal": "",
+  "campaign_suffix": "",
+  "decimal": ".",
+  "show_f": true,
+  "brand": "Seventh Steep",
+  "og_image": "og.png",
+  "units": { "g": "{v} g", "ml": "{v} ml", "time": "{t}s", "sec": "{v} s", "per100": "{g} g per 100 ml" },
+  "ui": {
+    "skip": "Skip to content",
+    "home_aria": "Seventh Steep, home",
+    "nav_aria": "Main",
+    "nav_guides": "Guides",
+    "nav_support": "Support",
+    "nav_privacy": "Privacy",
+    "footer_aria": "Footer",
+    "footer_brand": "Seventh Steep",
+    "footer_note": "No cookies, no analytics. Brewing numbers are starting points, not rules.",
+    "lang_aria": "Language",
+    "store": "Get it on the App Store",
+    "og_alt": "Seventh Steep: a gongfu tea timer for puerh and Yunnan white tea"
+  },
+  "home": {
+    "title": "Seventh Steep: gongfu tea timer for puerh and Yunnan white tea",
+    "description": "Brew puerh and Yunnan white tea the gongfu way. Exact grams and temperature, a timer for the rinse and every infusion, a shelf and notes.",
+    "eyebrow": "Gongfu tea timer",
+    "h1": "Brew puerh and Yunnan white tea, ",
+    "h1_em": "one infusion at a time.",
+    "lead": "Seventh Steep gives you the grams and the water temperature for your tea and vessel, then times the rinse and every infusion.",
+    "cta_guides": "Read the brewing guides",
+    "cta_note": "Free. Optional Plus for more photo identifications.",
+    "region_note": "",
+    "hero_alt": "The Seventh Steep timer: infusion 2 of an aged sheng at 98 °C, 0:06 left",
+    "what_eyebrow": "What it does",
+    "what_h2": "A quiet tool for the tea table",
+    "what_sub": "Made for evening sessions: dark screens, big numbers, no clutter.",
+    "features": [
+      { "shot": "01-brew", "title": "Grams and temperature", "text": "Pick a tea and a vessel. The app works out the grams of leaf and shows the water temperature in °C or °F.", "badge": "" },
+      { "shot": "02-timer", "title": "Every infusion, on time", "text": "A ring timer runs the rinse and each infusion. A bell and a vibration tell you when to pour.", "badge": "" },
+      { "shot": "03-photo", "title": "Identify a tea from a photo", "text": "Take one to three photos of the tea or its wrapper. The answer is an estimate, not a guarantee.", "badge": "Optional" },
+      { "shot": "05-notes", "title": "Shelf and notes", "text": "Keep a shelf of your teas and write down each session. Your shelf and notes stay on your phone.", "badge": "" }
+    ],
+    "shot_alt": "App screen: {title}",
+    "swipe": "Swipe to see more screens.",
+    "teas_eyebrow": "Five teas",
+    "teas_h2": "Starting points for each tea",
+    "teas_sub": "The app starts from these numbers. You can change the temperature, the vessel and the strength. Tap a tea with a guide to read more.",
+    "guide_aria": "{name}: brewing guide",
+    "free_h": "Free",
+    "free_p": "The timer, the shelf and the notes are free. Every month you get some free photo identifications.",
+    "plus_h": "Plus",
+    "plus_p": "An optional subscription that gives you more photo identifications. The price and the limits are shown in the app before you buy.",
+    "private_h": "Private",
+    "private_p": "No accounts, no ads, no tracking. Photos go to an AI service only after you agree.",
+    "privacy_link": "Privacy policy",
+    "langs_note": "In English, Ukrainian, Simplified and Traditional Chinese."
+  },
+  "guides_index": {
+    "title": "Gongfu brewing guides for puerh: Seventh Steep",
+    "description": "Short gongfu brewing guides for puerh: grams for 100 and 150 ml, water temperature in °C and °F, rinse and infusion times.",
+    "eyebrow": "Brewing guides",
+    "h1": "Gongfu brewing guides",
+    "lead": "Short, practical guides with grams, water temperature and infusion times. The numbers are the same ones the app uses.",
+    "in_progress": "Guides for aged sheng and Yunnan white tea are in progress.",
+    "box_h2": "Brew with a timer",
+    "box_p": "Seventh Steep times the rinse and every infusion for you, and shows the next one before you pour."
+  },
+  "guide": {
+    "crumbs_aria": "Breadcrumb",
+    "crumbs": "Guides",
+    "k_water": "Water",
+    "s_water": "{temp_f} °F",
+    "k_leaf": "Leaf",
+    "s_leaf": "per 100 ml of water",
+    "k_rinse": "Rinse",
+    "s_rinse": "pour it out",
+    "s_no_rinse": "no rinse",
+    "k_infusions": "Infusions",
+    "s_infusions": "then +{step} s each",
+    "h_leaf": "Leaf and water",
+    "caption": "Leaf and water for {name}",
+    "th_vessel": "Vessel",
+    "th_leaf": "Leaf",
+    "th_water": "Water",
+    "th_rinse": "Rinse",
+    "no_rinse": "No rinse",
+    "note_range": "Good range for the water: {range_c} °C ({range_f} °F). Other vessel sizes: {per100} g of leaf for every 100 ml.",
+    "h_times": "Infusion times",
+    "times_aria": "Infusion times in seconds",
+    "rinse_label": "Rinse",
+    "inf_label": "#{n}",
+    "note_times": "Times are in seconds, counted from when the vessel is full. After infusion {count}, add {step} seconds for each new one. In the app, “Softer” and “Stronger” make all the times shorter or longer.",
+    "h_how": "How to brew it",
+    "h_tips": "Tips",
+    "box_h2": "Brew this in Seventh Steep",
+    "box_p1": "The app has these numbers built in. It works out the grams for your vessel and times the rinse and every infusion, with a bell when it is time to pour.",
+    "box_p2": "You can also identify a tea from a photo. That part is optional, and the answer is an estimate, not a guarantee.",
+    "h_more": "More guides",
+    "all_guides": "All guides",
+    "all_guides_sub": "Every brewing guide on this site"
+  },
+  "guides": {
+    "shou-puerh-gongfu": {
+      "short": "Shou puerh",
+      "title": "How to brew shou puerh gongfu style",
+      "meta_title": "How to brew shou puerh gongfu style: grams, temperature, times",
+      "description": "Shou (ripe) puerh, gongfu style: {g100} g per 100 ml, {temp_c} °C ({temp_f} °F), a {rinse} s rinse and a full list of infusion times.",
+      "card": "Ripe, fermented puerh. {temp_c} °C water, a {rinse} second rinse, short first infusions.",
+      "intro": [
+        "Shou, or ripe puerh, is fermented in a wet pile before it is pressed. The taste is dark, smooth and earthy.",
+        "It is an easy tea to start with. It takes very hot water and long late infusions. Use the numbers below as a starting point and change them to your taste."
+      ],
+      "steps": [
+        "Heat the water to {temp_c} °C ({temp_f} °F).",
+        "Pour hot water into the empty vessel and the cups to warm them. Pour it out.",
+        "Put in {g100} g of leaf for a 100 ml vessel, or {g150} g for 150 ml.",
+        "Rinse: fill the vessel, wait {rinse} seconds, pour the water out. Do not drink the rinse.",
+        "First infusion: fill the vessel, wait {first} seconds, then pour all of the tea into a pitcher or the cups.",
+        "Go on with the next infusion times from the list. Pour out all of the tea each time."
+      ],
+      "tips": [
+        "Break a cake or brick into small chunks with a tea pick. Try not to crush the leaf into dust: dust makes a muddy, heavy cup.",
+        "Pour out every last drop at the end of each infusion. Leaf that sits in tea keeps brewing and the next cup gets too strong.",
+        "Too strong? Make the next infusion a few seconds shorter. Too thin? Make it a few seconds longer.",
+        "Bring the water back to the right heat between infusions. Shou likes it close to boiling the whole session.",
+        "Keep going while the tea still has taste. After the list, add {step} seconds for each new infusion."
+      ]
+    },
+    "young-sheng-puerh-gongfu": {
+      "short": "Young sheng puerh",
+      "title": "How to brew young sheng puerh gongfu style",
+      "meta_title": "Young sheng puerh gongfu: temperature, grams and steeping times",
+      "description": "Young sheng (raw) puerh, gongfu style: {g100} g per 100 ml, {temp_c} °C ({temp_f} °F), a {rinse} s rinse and a full list of steeping times.",
+      "card": "Raw puerh under about five years. {temp_c} °C water, a {rinse} second rinse, fast pours.",
+      "intro": [
+        "Sheng, or raw puerh, is not fermented in a pile. Young sheng (here: under about five years) is bright, floral and fresh, and it can be bitter.",
+        "Most of the bitterness comes from water that is too hot or an infusion that is too long. The numbers below keep it in balance. Use them as a starting point and change them to your taste."
+      ],
+      "steps": [
+        "Heat the water to {temp_c} °C ({temp_f} °F). The range for this tea is {range_c} °C ({range_f} °F).",
+        "Pour hot water into the empty vessel and the cups to warm them. Pour it out.",
+        "Put in {g100} g of leaf for a 100 ml vessel, or {g150} g for 150 ml.",
+        "Rinse: fill the vessel, wait {rinse} seconds, pour the water out.",
+        "First infusion: fill the vessel, wait {first} seconds, then pour all of the tea into a pitcher or the cups.",
+        "Go on with the next infusion times from the list. Pour out all of the tea each time."
+      ],
+      "tips": [
+        "Pour fast. The first infusions are only {first} seconds, so a slow pour adds a lot of time.",
+        "Leave the lid open between infusions. Hot, wet leaf under a closed lid keeps cooking and turns bitter.",
+        "Bitter cup? Lower the water by 2 to 3 °C or make the next infusion a few seconds shorter.",
+        "Loosen a piece from the cake gently with a tea pick. Whole leaves give a cleaner cup than broken ones.",
+        "Keep going while the tea still has taste. After the list, add {step} seconds for each new infusion."
+      ]
+    }
+  }
+}
