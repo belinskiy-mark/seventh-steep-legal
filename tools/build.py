@@ -22,11 +22,11 @@ from decimal import ROUND_HALF_UP, Decimal
 from pathlib import Path
 
 # ---------------------------------------------------------------------------------------------
-# !!! OWNER: replace PROVIDER_TOKEN with your provider token before the site goes live.     !!!
-# !!! App Store Connect > Analytics > Acquisition > Campaigns > "Generate a campaign link".   !!!
-# !!! The token is the number after "pt=" in the generated link. It is not a secret.          !!!
+# App Store provider token (set 2026-11-12). Source: App Store Connect > Analytics >
+# Acquisition > Campaigns > "+" (Generate a Campaign Link): the number after "pt=".
+# It is not a secret. It lets App Store Connect count downloads per campaign (ct=...).
 # ---------------------------------------------------------------------------------------------
-PROVIDER_TOKEN = "PROVIDER_TOKEN"
+PROVIDER_TOKEN = "129657601"
 
 APP_ID = "6825431287"
 SITE_URL = "https://seventhsteep.com"  # canonical, Open Graph and sitemap only; page links are relative

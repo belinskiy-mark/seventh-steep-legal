@@ -37,8 +37,8 @@ pyftsubset CormorantGaramond-Medium.ttf --unicodes="U+0020-007E,U+00A0-00FF,U+01
 
 Same for `Onest-Regular` and `Onest-SemiBold`; `NotoSerifSC-Brand` with `--unicodes='*'` (it holds only 七 第 泡). A character outside the subset falls back to the next font in the CSS stack.
 
-## Before launch
+## Notes
 
-- Set `PROVIDER_TOKEN` at the top of `tools/build.py` (App Store Connect campaign link generator), then rebuild.
+- `PROVIDER_TOKEN` at the top of `tools/build.py` comes from the App Store Connect campaign link generator. Campaign data shows in App Store Connect only after 5 or more downloads per campaign.
 - Links inside pages are relative, so the site works both at `belinskiy-mark.github.io/seventh-steep-legal/` and at `seventhsteep.com/`. Canonical, Open Graph and sitemap URLs use `https://seventhsteep.com`.
 - App Store campaigns: `site-home`, `site-guides`, `guide-shou`, `guide-sheng-young`.
